@@ -1,3 +1,5 @@
+
+
 class LL {
     Node head, tail;
     int size;
@@ -74,22 +76,28 @@ class LL {
     public static void main(String[] args) {
 
         LL list = new LL();
+            
+            list.addLast(10);    //addLast
+			list.addLast(20);
+			list.addLast(30);
+			list.addLast(40);
+			list.addLast(50);
 
-        list.addLast(2);
-        list.addLast(4);
-        list.addLast(6);
-        list.addLast(8);
-        list.addLast(10);
+			list.printList();     //Print
+ 
+			list.addFirst(5);     //addFirst
+			list.addFirst(1);
 
-        list.printList();
+			list.printList();     //Print
 
-        list.addFirst(20);
-        list.addFirst(40);
+			list.removeFirst();    //removeFirst
 
-        list.printList();
+			list.printList();      // Print
 
-        list.removeLast();
+			list.removeLast();    //removeLast
 
-        list.printList();
+			list.printList();      //Print
+
+        
     }
 }
